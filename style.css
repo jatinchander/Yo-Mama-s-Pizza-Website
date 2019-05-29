@@ -1,0 +1,340 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+}
+
+.my-container{
+	width: 100%;
+	margin: auto;
+}
+
+/*Navbar*/
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.navbar ul li{
+	margin: 0 2em;
+}
+
+.navbar a{
+	color: white;
+}
+
+.navbar-collapse:hover > ul li {
+  opacity: .5;
+}
+
+.navbar-collapse:hover > ul li:hover{
+  opacity: 1.0;
+}
+
+/*Home*/
+#home{
+	background: url("http://www.sugardale.com/sites/default/files/stuffed%20crust%20pizza.jpg");
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*"Yo Mama's Pizza" within background image*/
+#home h1{
+	position: relative;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-size: 6em;
+	text-transform: uppercase;
+	animation: textRight;
+	animation-duration: 2s; 
+}
+
+#home p{
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-size: 2em;
+	text-transform: uppercase;
+	animation: textLeft;
+	animation-duration: 2s;
+}
+
+/*Start of Animation for banner text*/
+@keyframes textRight{
+	0%{
+		right: -1200px;
+	}
+	100%{
+		right: 0;
+	}
+}
+
+@keyframes textLeft{
+	0%{
+		left: -1200px;
+	}
+	100%{
+		left: 0;
+	}
+}
+/*End of Animation for banner text*/
+
+/*About*/
+#about{
+	background: black;
+	margin-bottom: 1em;
+}
+
+#about h1{
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	padding-top: 2em;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+
+#about p{
+	color: white;
+	margin-bottom: 1em;
+}
+
+#about .wrapper{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+}
+
+#about .wrapper #aboutText, .wrapper #aboutImage{
+	padding: 2em;
+}
+
+#about .wrapper #aboutImage img{
+	width: 100%;
+	height: 100%;
+}
+
+/*Icons*/
+.flex{
+	display: flex;
+	justify-content: center;
+}
+
+.flex img{
+	margin-top: 1em;
+	margin-right: 1em;
+	width: 60px;
+	height: 60px;
+}
+
+/*Start of Hovering Effect for Icons*/
+#contact .flex:hover > div a, #menu .flex:hover > div img{
+  opacity: .5;
+}
+
+#contact .flex:hover > div a:hover, #menu .flex:hover > div img:hover{
+  opacity: 1;
+}
+
+/*End of Hovering Effect for Icons*/
+
+/*Contact*/
+#contact{
+	background: white;
+	margin-bottom: 3em;
+}
+
+#contact h1{
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	margin-top: 1em;
+}
+
+#contact h2{
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+#contact p{
+	color: black;
+	text-align: center;
+}
+
+#contact .wrapper2 #contactInfo div{
+	margin-bottom: 1em;
+}
+
+#contact .wrapper2{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 1em;
+}
+
+#contact .wrapper2 #contactInfo, .wrapper2 #mapid{
+	margin-top: 2em;
+}
+
+#contact .wrapper2 #mapid{
+	width: 80%;
+	height: 90%;
+	z-index: 0;
+}
+
+/*Image Container*/
+.photos{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+}
+
+/*All images*/
+.photos div img{
+	width: 100%;
+	height: 100%;
+}
+
+/*Start of Hovering Effect for images*/
+.photos:hover > div img{
+	opacity: .5;
+}
+
+.photos:hover > div img:hover{
+	opacity: 1;
+}
+/*End of Hovering Effect for images*/
+
+
+/*Footer*/
+footer{
+	padding: 2em;
+	margin-top: 1em;
+	background-color: black;
+	text-align: center;
+}
+
+footer p{
+	color: white;
+	margin-bottom: 1.5em;
+}
+
+/*Responsiveness*/
+@media(max-width: 576px){
+#home h1{
+	position: relative;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-size: 3em;
+	text-transform: uppercase;
+	animation: textRight;
+	animation-duration: 2s; 
+}
+}
+
+@media(max-width: 768px){
+	#about .wrapper{
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	#contact h1{
+		margin-top: 0;
+	}
+
+	#contact .wrapper2{
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	#contact .wrapper2 #mapid{
+		height: 50vh;
+	}
+	.photos{
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-column-gap: 0;
+		grid-row-gap: 0;
+	}
+
+	.photos div img{
+		margin-bottom: 1em;
+		height: width*(562/1000);
+	}
+}
+
+#menu{
+	margin-bottom: 2em;
+}
+
+.menu-title{
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:bold;
+  margin: 20px 0; 
+  text-align: center;
+}
+
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: black;
+}
+ 
+.menu-section {
+  margin-bottom: 80px;
+}
+ 
+.menu-section-title {
+  font-family: georgia;
+  font-size: 40px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: left
+
+}
+ 
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.slice-pie{
+	color: red
+}
+ 
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+ 
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}

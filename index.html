@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<!-- Beginning of HEAD -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Title on browser tab -->
+	<title>YO MAMA'S PIZZA</title>
+	<!-- Link in order to use pizza favicon for browser tabs -->
+	<link rel="icon" type="image/x-icon" href="pizza-icon.icon">
+	<!-- Link in order to use Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<!-- Link in order to use CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Link in order to use Leaflet Map -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   	crossorigin=""/>
+</head>
+<!-- End od HEAD -->
+
+<!-- Beginning of BODY -->
+<body>
+
+<!-- EVERYTHING WRAPPED IN CONTAINER -->
+	<div class="my-container">
+		<!-- Beginning of NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav m-auto">
+      				<li class="nav-item">
+        				<a class="nav-link" href="#home">Home</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#about">About</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#menu">Menu</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#contact">Contact</a>
+      				</li>
+      			</div>
+			</nav>
+		<!-- End of NAVBAR -->
+
+		<!-- Beginning of HOME -->
+		<section id="home">
+			<header>
+				<h1>Yo Mama's Pizza</h1>	
+				<p>Flushing, NY<p>
+			</header>
+		</section>
+		<!-- End of HOME -->
+
+		<!-- Beginning of ABOUT -->
+		<section id="about">
+			<h1>About Us</h1>
+			<div class="wrapper">
+				<div id="aboutText">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					</p>
+				</div>
+
+				<div id="aboutImage">
+					<img src="13.jpeg">
+				</div>
+			</div>
+		</section>
+		<!-- End of ABOUT -->
+
+
+		<!-- Start of MENU -->
+		<section id="menu">
+
+			 <!-- Start of Menu Body -->
+	  		 <div class="menu-body">
+
+	  		 	 <div class="menu-title">Menu</div>
+
+	  			 <!-- Start of Menu Section -->
+	 			 <div class="menu-section">
+
+	 			 	<!-- Start of Topping Slices Pies -->
+	     		 	<h2 class="menu-section-title">Pizza</h2>
+
+	     		 	 <!-- Item Starts -->
+	  				 <div class="slice-pie">
+	      					<div class="menu-item-price">Slice&emsp;&emsp;Pie&emsp;</div>
+	     		    		
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Regular</div>
+	      					<div class="menu-item-price">$2.50 &nbsp $19.00</div>
+	     		    		
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Pepperoni</div>
+	      					<div class="menu-item-price">$3.50 &nbsp $24.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Sicilian</div>
+	      					<div class="menu-item-price">$3.00 &nbsp $24.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Vegetable</div>
+	      					<div class="menu-item-price">$4.00 &nbsp $26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Hawaiin</div>
+	      					<div class="menu-item-price">$4.00 &nbsp $26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Bacon Chicken Ranch</div>
+	      					<div class="menu-item-price">$4.50 &nbsp $28.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Pepperoni Mushroom </div>
+	      					<div class="menu-item-price">$4.00 &nbsp $26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">BBQ Ranch </div>
+	      					<div class="menu-item-price">$4.00 &nbsp $26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Buffalo Sriacha</div>
+	      					<div class="menu-item-price">$4.50 &nbsp $26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Grandma </div>
+	      					<div class="menu-item-price">$3.00 &nbsp $23.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Sausage</div>
+	      					<div class="menu-item-price">$4.00 &nbsp $24.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Shrimp</div>
+	      					<div class="menu-item-price">$5.50 &nbsp $35.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Meatball</div>
+	      					<div class="menu-item-price">$4.00 &nbsp $24.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name"> Supreme </div>
+	      					<div class="menu-item-price">$28.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Two Topping</div>
+	      					<div class="menu-item-price">$26.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Half Pie Topping</div>
+	      					<div class="menu-item-price">$22.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  				 <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Special (3 Toppings)</div>
+	      					<div class="menu-item-price">$30.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  			 </div>
+	  			 <!-- End of Menu Section - Topping Slices Pies -->
+
+	  			 <!-- Start of Menu Section - Small Mama Bites -->
+	  			 <div class="menu-section">
+
+	    			 <h2 class="menu-section-title">Small Mama Bites</h2>
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Beef Patty</div>
+	      					<div class="menu-item-price">$2.50</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Beef Patty With Cheese</div>
+	      					<div class="menu-item-price">$3.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Beef Patty With Cheese & Pepperoni</div>
+	      					<div class="menu-item-price">$3.50</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Garlic Knots (5)</div>
+	      					<div class="menu-item-price">$2.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Chicken Roll or Sausage Roll</div>
+	      					<div class="menu-item-price">$6.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Pepperoni Pinwheel</div>
+	      					<div class="menu-item-price">$3.50</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Stromboli Meat Sandwich</div>
+	      					<div class="menu-item-price">$3.50</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Buffalo Wings (4)</div>
+	      					<div class="menu-item-price">$2.75</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	  			 </div>
+	  			<!-- End of Menu Section - Small Mamas Bites -->
+
+
+	  			 <!-- Start of Menu Section - Yo Mama's Desserts -->
+	  			 <div class="menu-section">
+	 		   		 
+	    	   		 <h2 class="menu-section-title">Yo Mama's Desserts</h2>
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Cookies</div>
+	      					<div class="menu-item-price">$0.75</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Brownies</div>
+	      					<div class="menu-item-price">$2.00</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Churros</div>
+	      					<div class="menu-item-price">$1.50</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    		 </div>
+	  			 <!-- End of Yo Mama's Desserts -->
+
+	  			 <!-- Start of Menu Section - Drinks -->
+	  			 <div class="menu-section">
+	    	   	     
+			   	     <h2 class="menu-section-title">Drinks</h2>
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Soda Can</div>
+	      					<div class="menu-item-price">$1.25</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    			  <!-- Item Starts -->
+	  				 <div class="menu-item">
+	      					<div class="menu-item-name">Water</div>
+	      					<div class="menu-item-price">$1.25</div>
+	    			 </div>
+	    			 <!-- Item Ends -->
+
+	    	     </div>
+	  			 <!-- End of Menu Section - Drinks -->
+
+	  		 </div>
+	  		 <!-- End of Menu Body -->
+		 </section>
+			 <!-- End of MENU -->
+
+		<!-- Beginning of Photo Gallery -->
+		<section id="photogrid">
+			<div class="photos">
+				<div>
+					<img src="1.jpg">
+				</div>
+				<div>
+					<img src="2.jpg">
+				</div>
+				<div>
+					<img src="3.jpg">
+				</div>
+				<div>
+					<img src="4.jpg">
+				</div>
+				<div>
+					<img src="5.jpg">
+				</div>
+				<div>
+					<img src="12.jpg">
+				</div>
+				<div>
+					<img src="7.jpg">
+				</div>
+				<div>
+					<img src="8.jpg">
+				</div>
+				<div>
+					<img src="15.jpg">
+				</div>
+		</section>
+		<!-- End of Photo Gallery -->
+
+		<!-- Beginning of CONTACT -->
+		<section id="contact">
+			<h1>Contact Us</h1>
+			<div class="wrapper2">
+				<div id="contactInfo flex">
+					<div id="phoneNumber">
+						<h2>Phone</h2>
+						<p>(917) 285 - 2899</p>
+					</div>
+
+					<div id="location">
+						<h2>Location</h2>
+						<p>135-45 Roosevelt Avenue</p>
+						<p>Flushing, NY</p>
+					</div>
+
+					<div id="hours">
+						<h2>Hours</h2>
+						<p>Monday: 10am - 11pm</p>
+						<p>Tuesday: 10am - 11pm</p>
+						<p>Wednesday: 10am - 11pm</p>
+						<p>Thursday: 10am - 11pm</p>
+						<p>Friday: 10am - 11pm</p>
+						<p>Saturday: 10am - 11pm</p>
+						<p>Sunday: 10am - 11pm</p>
+					</div>
+
+					<div class="flex">
+						<div class="icon">
+							<a href="https://www.instagram.com/yomamaspizzeria/?utm_source=ig_profile_share&igshid=ae1md9egb4n7"><img src="instagram-logo.png"></a>
+						</div>
+
+						<div class="icon">
+							<a href="https://www.facebook.com/yomamaspizzeria/"><img src="facebook-logo.png"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex">
+					<div id="mapid"></div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT -->
+
+		<!-- Beginning of Footer -->
+		<footer>
+			<p>Yo Mama's Pizza, Copyright &copy; 2019</p>
+			<p>Designed By: Jatin Chander, Hakan Turgut, Kevin Wong, Ronnie Yuan</p>
+		</footer>
+		<!-- End of Footer -->
+	
+
+
+
+	</div>
+	<!-- Link in order to use leaflet/mapbox -->
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   	crossorigin=""></script>
+   	 <!-- JavaScript -->
+   	<script type="text/javascript" src="app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
