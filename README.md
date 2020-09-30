@@ -14,4 +14,10 @@ Git,
 Heroku,
 Mapbox API.
 
+I just added four modules into that:
+1.Home Page.
+2.About Page.
+3.Menu Page.
+4.Contact Page
+
 URL for Prototype Website: https://glacial-brook-71648.herokuapp.com/
